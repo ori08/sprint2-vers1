@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>canvas</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="init();">
+
+
+    <header class="header-container main-nav">
+
+        <div class="header-body">
+            <img class="logo" src="/font-pics/1.png" alt="">
+        </div>
+
+
+        <a class="nav-fonts part1" href="#">Gallery</a>
+        <a class="nav-fonts part2" href="#">About</a>
+
+
+        <div>
+    </header>
+
+
+    <div class="main-container-editor">
+
+        <div class="left-side">
+
+            <canvas class="left-side" id="my-canvas" height="400" width="400" onclick="draw(event)"></canvas>
+        </div>
+
+
+        <div class="right-side">
+
+            <form class="left1 text-area" onsubmit="onSetSettings(event)">
+                <label>
+                    <input type="text" name="text" placeholder="......">
+                </label>
+
+
+
+
+            </form>
+            <button class="btn fontT left2">+</button>
+            <button class="btn trash left3" onclick="remove()">-</button>
+
+
+            <input onchange="changeColor(this.value)" class="shapeColor grid-row-4 cloum-1 " type="color"
+                name="shape-Color" value="#ff0000">
+
+            <button class="btn grid-row-2 cloum-2" onclick="clearCanvas()">C</button>
+            <button class="btn grid-row-3 cloum-2 " onclick="moveDown()">↓</button>
+            <button class="btn grid-row-3 cloum-1 " onclick="moveUp()">↑</button>
+            <button class="btn grid-row-3 cloum-3 " onclick="fontIncarseSize()">A+</button>
+            <button class="btn grid-row-3 cloum-4 " onclick="fontDecraseSize()">A-</button>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-conatiner">
+
+
+            <img class="logo-footer" src="/font-pics/1.png" alt="">
+
+
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+    </div>
+    <!-- <div class="canvas-container">
+        <h3>Container</h3> -->
+
+
+
+
+
+
+
+
+
+
+    <div class="gallery-container"></div>
+    <div class="meme-generator"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <a href="#" class="btn" onclick="downloadImg(this)" download="my-img.jpg">save Image</a> -->
+
+    </div>
+
+
+
+
+
+    <!-- <img src="/img/1.jpg" alt=""> -->
+    <script src="main.js"></script>
+    <script src="meme-services.js"></script>
+</body>
+
+</html>

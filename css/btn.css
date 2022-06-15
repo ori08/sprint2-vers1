@@ -1,0 +1,15 @@
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 4.5px 9px 0 9.5px;
+    padding: 5.5px 5.2px 4.9px 5.2px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 40px;
+}
+
+.btn.trash {
+    background-image: url(/icons-pics/trash.png);
+    background-position: center;
+    background-size: cover;
+}
